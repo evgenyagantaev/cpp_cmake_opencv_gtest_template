@@ -5,6 +5,7 @@ message("")
 
 cmake_minimum_required(VERSION 3.10)
 project(Template VERSION 0.0.0.1 LANGUAGES C CXX)
+
 set(TARGET_NAME "template")
 set(TEST_TARGET_NAME "test_runner")
 
@@ -75,7 +76,8 @@ include_directories(
 
 enable_testing()
 
-add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS})
+add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS} ${MAIN_HEADERS} Src/sample1.cpp) 
+#target_sources(${TEST_TARGET_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/Src/sample1.cpp)
 
 target_link_libraries(${TEST_TARGET_NAME} gtest_main)
 
