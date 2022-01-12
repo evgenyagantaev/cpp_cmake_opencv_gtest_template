@@ -1,6 +1,12 @@
+message("")
+message(">>> Hello, Master! <<<")
+message(">>> CMake is the most powerful buildsystem! <<<")
+message("")
+
 cmake_minimum_required(VERSION 3.10)
-project(ThermoAlgV1)
+project(Template VERSION 0.0.0.1 LANGUAGES C CXX)
 set(TARGET_NAME "template")
+set(TEST_TARGET_NAME "test_runner")
 
 if (CMAKE_BUILD_TYPE STREQUAL "")
    message(STATUS "CMAKE_BUILD_TYPE not defined, 'Debug' will be used")
@@ -44,16 +50,34 @@ file (GLOB MAIN_SRC
 file (GLOB MAIN_HEADERS
      ${CMAKE_CURRENT_SOURCE_DIR}/*.h*
      ${CMAKE_CURRENT_SOURCE_DIR}/Inc/*.h*
+     ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.h*
+     )
+
+file (GLOB TEST_SRC
+     ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.c*
+     )
+
+file (GLOB TEST_HEADERS
+     ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.h*
      )
 
 source_group("Src" FILES ${MAIN_SRC})
 source_group("Inc" FILES ${MAIN_HEADERS})
 
 include_directories(
-	    /usr/include
+        /usr/include
         ${CMAKE_CURRENT_SOURCE_DIR}/Inc
         )
 
-add_executable(${TARGET_NAME} ${MAIN_SRC} ${MAIN_HEADERS})
+#add_executable(${TARGET_NAME} ${MAIN_SRC} ${MAIN_HEADERS})
 
-target_link_libraries(${TARGET_NAME}  PRIVATE ${OpenCV_LIBRARIES} )
+#target_link_libraries(${TARGET_NAME}  PRIVATE ${OpenCV_LIBRARIES} )
+
+enable_testing()
+
+add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS})
+
+target_link_libraries(${TEST_TARGET_NAME} gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(${TEST_TARGET_NAME})

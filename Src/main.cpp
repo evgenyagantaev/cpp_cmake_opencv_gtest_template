@@ -41,6 +41,7 @@ cv::Point picture_center;
 
 int main( int argc, const char** argv )
 {
+    
     int threshold_value = 171;
     sscanf(argv[1], "%d", &threshold_value);
     int threshold_type = 0;
@@ -51,13 +52,14 @@ int main( int argc, const char** argv )
     3: Threshold to Zero
     4: Threshold to Zero Inverted
     */
+    
     int const max_value = 255;
     int const max_type = 4;
     int const max_binary_value = 255;
     Mat src, src_gray, dst;
-
+    
     namedWindow("picture", WINDOW_NORMAL);
-
+    
     src = imread("tuman.jpg", IMREAD_COLOR);
 
     imshow("picture", src);
@@ -73,36 +75,37 @@ int main( int argc, const char** argv )
     imwrite("tuman_bw.jpg", dst);
     waitKey(2000);
 
-     picture_width = picture.cols;
-     picture_height = picture.rows;
+    picture_width = picture.cols;
+    picture_height = picture.rows;
+    
+    for(int i=0; i<picture_width; i++)
+    {
+        for(int j=0; j<picture_height; j++)
+        {
+            if(dst.at<uchar>(j,i) == 0)
+            {
+                src.at<Vec3b>(j, i) = Vec3b(0, 0, 255);
+            }
+            else
+            {
+                src.at<Vec3b>(j, i) = Vec3b(0, 0, 0);
+            }
+        }
+    }
+    
+    imshow("picture", src);
+    imwrite("tuman_red.jpg", src);
 
-     for(int i=0; i<picture_width; i++)
-     {
-         for(int j=0; j<picture_height; j++)
-         {
-             if(dst.at<uchar>(j,i) == 0)
-             {
-                 src.at<Vec3b>(j, i) = Vec3b(0, 0, 255);
-             }
-             else
-             {
-                 src.at<Vec3b>(j, i) = Vec3b(0, 0, 0);
-             }
-         }
-     }
-     imshow("picture", src);
-     imwrite("tuman_red.jpg", src);
+    cout << "picture " << picture_height << " x " << picture_width << endl;
 
-     cout << "picture " << picture_height << " x " << picture_width << endl;
-
-     picture_center = Point((int)(picture_width/2) - 1, (int)(picture_height/2) - 1);
+    picture_center = Point((int)(picture_width/2) - 1, (int)(picture_height/2) - 1);
 
     setMouseCallback("picture", onMouse, &picture);
 
     
     waitKey();
 
-    return 0;
+   return 0;
 }
 
 
