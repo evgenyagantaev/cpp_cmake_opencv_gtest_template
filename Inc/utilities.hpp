@@ -11,4 +11,4 @@
 
 
 
-void draw_cross(cv::Mat img, int i, int j, uint8_t brightness);
+bool draw_cross(cv::Mat img, int i, int j, uint8_t brightness);

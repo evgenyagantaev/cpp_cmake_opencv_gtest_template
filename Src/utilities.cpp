@@ -1,8 +1,10 @@
 #include "utilities.hpp"
 
 
-void draw_cross(cv::Mat img, int j, int i, uint8_t brightness)
+bool draw_cross(cv::Mat img, int j, int i, uint8_t brightness)
 {
+    bool success = false;
+
     if((i>2) && (j>2) && (i<(img.rows - 3)) && (j<(img.cols - 3)))
     {
         //img->at<uchar>(i,j) = brightness;
@@ -19,5 +21,7 @@ void draw_cross(cv::Mat img, int j, int i, uint8_t brightness)
         img.at<uchar>(i,j+2) = brightness;
         img.at<uchar>(i,j+3) = brightness;
     }
+
+    return success;
     
 }

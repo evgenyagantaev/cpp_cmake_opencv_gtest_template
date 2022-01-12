@@ -76,10 +76,13 @@ include_directories(
 
 enable_testing()
 
-add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS} ${MAIN_HEADERS} Src/sample1.cpp) 
-#target_sources(${TEST_TARGET_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/Src/sample1.cpp)
+add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS} ${MAIN_HEADERS} ) 
+target_sources(${TEST_TARGET_NAME} PUBLIC 
+        #${CMAKE_CURRENT_SOURCE_DIR}/Src/sample1.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/Src/utilities.cpp
+        )
 
-target_link_libraries(${TEST_TARGET_NAME} gtest_main)
+target_link_libraries(${TEST_TARGET_NAME} PRIVATE ${OpenCV_LIBRARIES} gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(${TEST_TARGET_NAME})
