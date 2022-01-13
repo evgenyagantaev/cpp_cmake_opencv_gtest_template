@@ -56,7 +56,9 @@ file (GLOB MAIN_HEADERS
 
 file (GLOB TEST_SRC
      ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.c*
+     ${MAIN_SRC}
      )
+list(FILTER TEST_SRC EXCLUDE REGEX ".*main\.cpp.*")     
 
 file (GLOB TEST_HEADERS
      ${CMAKE_CURRENT_SOURCE_DIR}/tests/*.h*
@@ -77,10 +79,10 @@ include_directories(
 enable_testing()
 
 add_executable(${TEST_TARGET_NAME} ${TEST_SRC} ${TEST_HEADERS} ${MAIN_HEADERS} ) 
-target_sources(${TEST_TARGET_NAME} PUBLIC 
+#target_sources(${TEST_TARGET_NAME} PUBLIC 
         #${CMAKE_CURRENT_SOURCE_DIR}/Src/sample1.cpp
-        ${CMAKE_CURRENT_SOURCE_DIR}/Src/utilities.cpp
-        )
+#        ${CMAKE_CURRENT_SOURCE_DIR}/Src/utilities.cpp
+#        )
 
 target_link_libraries(${TEST_TARGET_NAME} PRIVATE ${OpenCV_LIBRARIES} gtest_main)
 
