@@ -6,29 +6,13 @@
 #include "thermometry.hpp"
 #include "utilities.hpp"
 
+
 #include "space_transformer.hpp"
 
 
 
 using namespace cv;
 using namespace std;
-
-//***
-
-//Mouse callback
-static void onMouse( int event, int x, int y, int, void* userInput );
-
-//***
-
-//Mat picture = imread("project/tuman.jpg", IMREAD_COLOR);
-
-int picture_width;
-int picture_height;
-
-cv::Point picture_center;
-
-//***
-
 
 
 //*****************************************************************************************
@@ -78,8 +62,8 @@ int main( int argc, const char** argv )
     imwrite("data/tuman_bw.jpg", dst);
     waitKey(2000);
 
-    picture_width = src.cols;
-    picture_height = src.rows;
+    uint picture_width = src.cols;
+    uint picture_height = src.rows;
     
     for(int i=0; i<picture_width; i++)
     {
@@ -101,9 +85,10 @@ int main( int argc, const char** argv )
 
     cout << "picture " << picture_height << " x " << picture_width << endl;
 
-    picture_center = Point((int)(picture_width/2) - 1, (int)(picture_height/2) - 1);
-
-    setMouseCallback("picture", onMouse, &src_gray);
+    Window_frame window_frame;
+    window_frame.window_name = "picture";
+    window_frame.frame = src_gray;
+    setMouseCallback("picture", onMouse, (void *)(&window_frame));
 
     
     waitKey();
@@ -118,29 +103,5 @@ int main( int argc, const char** argv )
 //*****************************************************************************************
 //*****************************************************************************************
 //*****************************************************************************************
-
-
-
-
-
-
-//Mouse callback
-//*
-static void onMouse( int event, int x, int y, int, void* userInput )
-{
-    //*
-    Mat *frame = (Mat *)userInput;
-
-    if( event == EVENT_LBUTTONDOWN )
-    {
-        draw_cross(*frame, x, y, BLACK);
-        cout << "pixel[" << y << "," << x << "] -> " << (int)frame->at<uchar>(y,x) << endl;
-        // Show the result
-        imshow("picture", *frame);
-
-    }
-    //*/
- }
- //*/
 
 
