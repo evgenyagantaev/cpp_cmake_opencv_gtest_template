@@ -72,9 +72,9 @@ include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}/Inc
         )
 
-#add_executable(${TARGET_NAME} ${MAIN_SRC} ${MAIN_HEADERS})
+add_executable(${TARGET_NAME} ${MAIN_SRC} ${MAIN_HEADERS})
 
-#target_link_libraries(${TARGET_NAME}  PRIVATE ${OpenCV_LIBRARIES} )
+target_link_libraries(${TARGET_NAME}  PRIVATE ${OpenCV_LIBRARIES} )
 
 enable_testing()
 

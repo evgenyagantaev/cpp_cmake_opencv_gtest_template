@@ -20,7 +20,7 @@ static void onMouse( int event, int x, int y, int, void* userInput );
 
 //***
 
-Mat picture = imread("tuman.jpg", IMREAD_COLOR);
+//Mat picture = imread("project/tuman.jpg", IMREAD_COLOR);
 
 int picture_width;
 int picture_height;
@@ -42,8 +42,11 @@ cv::Point picture_center;
 int main( int argc, const char** argv )
 {
     
-    int threshold_value = 171;
-    sscanf(argv[1], "%d", &threshold_value);
+    int threshold_value = 141;
+    if(argc > 1)
+    {
+        sscanf(argv[1], "%d", &threshold_value);
+    }
     int threshold_type = 0;
     /* 
     0: Binary
@@ -60,23 +63,23 @@ int main( int argc, const char** argv )
     
     namedWindow("picture", WINDOW_NORMAL);
     
-    src = imread("tuman.jpg", IMREAD_COLOR);
+    src = imread("data/tuman.jpg", IMREAD_COLOR);
 
     imshow("picture", src);
     waitKey(2000);
 
-    src_gray = imread("tuman.jpg", IMREAD_GRAYSCALE);
+    src_gray = imread("data/tuman.jpg", IMREAD_GRAYSCALE);
     imshow("picture", src_gray);
-    imwrite("tuman_grayscale.jpg", src_gray);
+    imwrite("data/tuman_grayscale.jpg", src_gray);
     waitKey(2000);
 
     threshold( src_gray, dst, threshold_value, max_binary_value, threshold_type );
     imshow("picture", dst);
-    imwrite("tuman_bw.jpg", dst);
+    imwrite("data/tuman_bw.jpg", dst);
     waitKey(2000);
 
-    picture_width = picture.cols;
-    picture_height = picture.rows;
+    picture_width = src.cols;
+    picture_height = src.rows;
     
     for(int i=0; i<picture_width; i++)
     {
@@ -94,13 +97,13 @@ int main( int argc, const char** argv )
     }
     
     imshow("picture", src);
-    imwrite("tuman_red.jpg", src);
+    imwrite("data/tuman_red.jpg", src);
 
     cout << "picture " << picture_height << " x " << picture_width << endl;
 
     picture_center = Point((int)(picture_width/2) - 1, (int)(picture_height/2) - 1);
 
-    setMouseCallback("picture", onMouse, &picture);
+    setMouseCallback("picture", onMouse, &src_gray);
 
     
     waitKey();
@@ -133,7 +136,7 @@ static void onMouse( int event, int x, int y, int, void* userInput )
         draw_cross(*frame, x, y, BLACK);
         cout << "pixel[" << y << "," << x << "] -> " << (int)frame->at<uchar>(y,x) << endl;
         // Show the result
-        imshow("picture", picture);
+        imshow("picture", *frame);
 
     }
     //*/
