@@ -21,44 +21,59 @@ using namespace std;
 //*****************************************************************************************
 //*****************************************************************************************
 
-
+#include "drob.hpp"
 
 int main( int argc, const char** argv )
 {
+
+    Drob sixSeven{6, 7};
+    Drob eight = Drob(8);
+    Drob nine = 9;
+
+    Drob dCopy(sixSeven);
+
+    cout << sixSeven << endl;
+    cout << eight << endl;
+    cout << nine << endl;
+
+    cout << dCopy << endl;
+
+    waitKey();
     
+    /*
     int threshold_value = 141;
     if(argc > 1)
     {
         sscanf(argv[1], "%d", &threshold_value);
     }
     int threshold_type = 0;
-    /* 
-    0: Binary
-    1: Binary Inverted
-    2: Threshold Truncated
-    3: Threshold to Zero
-    4: Threshold to Zero Inverted
-    */
+    //0: Binary
+    //1: Binary Inverted
+    //2: Threshold Truncated
+    //3: Threshold to Zero
+    //4: Threshold to Zero Inverted
     
     int const max_value = 255;
     int const max_type = 4;
     int const max_binary_value = 255;
     Mat src, src_gray, dst;
+
+    const String window_name = "picture";
     
-    namedWindow("picture", WINDOW_NORMAL);
+    namedWindow(window_name, WINDOW_NORMAL);
     
     src = imread("data/tuman.jpg", IMREAD_COLOR);
 
-    imshow("picture", src);
+    imshow(window_name, src);
     waitKey(2000);
 
     src_gray = imread("data/tuman.jpg", IMREAD_GRAYSCALE);
-    imshow("picture", src_gray);
+    imshow(window_name, src_gray);
     imwrite("data/tuman_grayscale.jpg", src_gray);
     waitKey(2000);
 
     threshold( src_gray, dst, threshold_value, max_binary_value, threshold_type );
-    imshow("picture", dst);
+    imshow(window_name, dst);
     imwrite("data/tuman_bw.jpg", dst);
     waitKey(2000);
 
@@ -80,18 +95,19 @@ int main( int argc, const char** argv )
         }
     }
     
-    imshow("picture", src);
+    imshow(window_name, src);
     imwrite("data/tuman_red.jpg", src);
 
     cout << "picture " << picture_height << " x " << picture_width << endl;
 
     Window_frame window_frame;
-    window_frame.window_name = "picture";
+    window_frame.window_name = window_name;
     window_frame.frame = src_gray;
-    setMouseCallback("picture", onMouse, (void *)(&window_frame));
+    setMouseCallback(window_name, onMouse, (void *)(&window_frame));
 
     
     waitKey();
+    */
 
    return 0;
 }
