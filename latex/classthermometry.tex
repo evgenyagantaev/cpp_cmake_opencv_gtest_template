@@ -1,0 +1,176 @@
+\hypertarget{classthermometry}{}\doxysection{thermometry Class Reference}
+\label{classthermometry}\index{thermometry@{thermometry}}
+
+
+{\ttfamily \#include $<$thermometry.\+hpp$>$}
+
+
+
+Collaboration diagram for thermometry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classthermometry__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classthermometry_a5f8878c103ccbcd54290a6bc23927bcf}{thermometry}} (void)
+\item 
+void \mbox{\hyperlink{classthermometry_a464dd050d9b05388f3c800610adfa92c}{mark\+\_\+frame}} (cv\+::\+Mat frame\+\_\+to\+\_\+mark, int x, int y)
+\item 
+void \mbox{\hyperlink{classthermometry_a9f58d272603be792c7be034c0b2a7761}{set\+\_\+mark\+\_\+canvas}} (cv\+::\+Mat value)
+\item 
+cv\+::\+Mat \mbox{\hyperlink{classthermometry_a57c7c541d5fee2a531494466291280c2}{get\+\_\+mark\+\_\+canvas}} (void)
+\item 
+bool \mbox{\hyperlink{classthermometry_a001e98ddee4036a39ee948c284d43224}{is\+\_\+marked}} (void)
+\item 
+void \mbox{\hyperlink{classthermometry_a929c584c166300102a2b94212db13a58}{unmark}} (void)
+\item 
+double \mbox{\hyperlink{classthermometry_a31a54a48cf14131571b0703e19c6c5f4}{left\+\_\+eye\+\_\+detect\+\_\+temperature}} ()
+\item 
+double \mbox{\hyperlink{classthermometry_ac18ba2d70a6fdff08c29b0061913d8bb}{right\+\_\+eye\+\_\+detect\+\_\+temperature}} ()
+\item 
+double \mbox{\hyperlink{classthermometry_af2fc63527dcd792b569779ddbfb4143b}{forehead\+\_\+detect\+\_\+temperature}} ()
+\item 
+void \mbox{\hyperlink{classthermometry_acef30a6e1eb15172d1bd6bbe52af9503}{legacy\+\_\+mark}} (\mbox{\hyperlink{struct_face_position_info}{Face\+Position\+Info}} face\+Pos)
+\item 
+\mbox{\hyperlink{struct_face_temperature}{Face\+Temperature}} \mbox{\hyperlink{classthermometry_a51bf4e558ba2f4e0cff0b5099f665360}{detect\+\_\+temperature}} (cv\+::\+Mat frame, \mbox{\hyperlink{struct_face_position_info}{Face\+Position\+Info}} face\+Pos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 78 of file thermometry.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classthermometry_a5f8878c103ccbcd54290a6bc23927bcf}\label{classthermometry_a5f8878c103ccbcd54290a6bc23927bcf}} 
+\index{thermometry@{thermometry}!thermometry@{thermometry}}
+\index{thermometry@{thermometry}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{thermometry()}{thermometry()}}
+{\footnotesize\ttfamily thermometry\+::thermometry (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 25 of file thermometry.\+cpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classthermometry_a51bf4e558ba2f4e0cff0b5099f665360}\label{classthermometry_a51bf4e558ba2f4e0cff0b5099f665360}} 
+\index{thermometry@{thermometry}!detect\_temperature@{detect\_temperature}}
+\index{detect\_temperature@{detect\_temperature}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{detect\_temperature()}{detect\_temperature()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_face_temperature}{Face\+Temperature}} thermometry\+::detect\+\_\+temperature (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame,  }\item[{\mbox{\hyperlink{struct_face_position_info}{Face\+Position\+Info}}}]{face\+Pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_af2fc63527dcd792b569779ddbfb4143b}\label{classthermometry_af2fc63527dcd792b569779ddbfb4143b}} 
+\index{thermometry@{thermometry}!forehead\_detect\_temperature@{forehead\_detect\_temperature}}
+\index{forehead\_detect\_temperature@{forehead\_detect\_temperature}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{forehead\_detect\_temperature()}{forehead\_detect\_temperature()}}
+{\footnotesize\ttfamily double thermometry\+::forehead\+\_\+detect\+\_\+temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 227 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a57c7c541d5fee2a531494466291280c2}\label{classthermometry_a57c7c541d5fee2a531494466291280c2}} 
+\index{thermometry@{thermometry}!get\_mark\_canvas@{get\_mark\_canvas}}
+\index{get\_mark\_canvas@{get\_mark\_canvas}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{get\_mark\_canvas()}{get\_mark\_canvas()}}
+{\footnotesize\ttfamily Mat thermometry\+::get\+\_\+mark\+\_\+canvas (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 54 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a001e98ddee4036a39ee948c284d43224}\label{classthermometry_a001e98ddee4036a39ee948c284d43224}} 
+\index{thermometry@{thermometry}!is\_marked@{is\_marked}}
+\index{is\_marked@{is\_marked}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{is\_marked()}{is\_marked()}}
+{\footnotesize\ttfamily bool thermometry\+::is\+\_\+marked (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 194 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a31a54a48cf14131571b0703e19c6c5f4}\label{classthermometry_a31a54a48cf14131571b0703e19c6c5f4}} 
+\index{thermometry@{thermometry}!left\_eye\_detect\_temperature@{left\_eye\_detect\_temperature}}
+\index{left\_eye\_detect\_temperature@{left\_eye\_detect\_temperature}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{left\_eye\_detect\_temperature()}{left\_eye\_detect\_temperature()}}
+{\footnotesize\ttfamily double thermometry\+::left\+\_\+eye\+\_\+detect\+\_\+temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_acef30a6e1eb15172d1bd6bbe52af9503}\label{classthermometry_acef30a6e1eb15172d1bd6bbe52af9503}} 
+\index{thermometry@{thermometry}!legacy\_mark@{legacy\_mark}}
+\index{legacy\_mark@{legacy\_mark}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{legacy\_mark()}{legacy\_mark()}}
+{\footnotesize\ttfamily void thermometry\+::legacy\+\_\+mark (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_face_position_info}{Face\+Position\+Info}}}]{face\+Pos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 59 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a464dd050d9b05388f3c800610adfa92c}\label{classthermometry_a464dd050d9b05388f3c800610adfa92c}} 
+\index{thermometry@{thermometry}!mark\_frame@{mark\_frame}}
+\index{mark\_frame@{mark\_frame}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{mark\_frame()}{mark\_frame()}}
+{\footnotesize\ttfamily void thermometry\+::mark\+\_\+frame (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{frame\+\_\+to\+\_\+mark,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Definition at line 86 of file thermometry.\+cpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{classthermometry_a464dd050d9b05388f3c800610adfa92c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classthermometry_ac18ba2d70a6fdff08c29b0061913d8bb}\label{classthermometry_ac18ba2d70a6fdff08c29b0061913d8bb}} 
+\index{thermometry@{thermometry}!right\_eye\_detect\_temperature@{right\_eye\_detect\_temperature}}
+\index{right\_eye\_detect\_temperature@{right\_eye\_detect\_temperature}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{right\_eye\_detect\_temperature()}{right\_eye\_detect\_temperature()}}
+{\footnotesize\ttfamily double thermometry\+::right\+\_\+eye\+\_\+detect\+\_\+temperature (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 217 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a9f58d272603be792c7be034c0b2a7761}\label{classthermometry_a9f58d272603be792c7be034c0b2a7761}} 
+\index{thermometry@{thermometry}!set\_mark\_canvas@{set\_mark\_canvas}}
+\index{set\_mark\_canvas@{set\_mark\_canvas}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{set\_mark\_canvas()}{set\_mark\_canvas()}}
+{\footnotesize\ttfamily void thermometry\+::set\+\_\+mark\+\_\+canvas (\begin{DoxyParamCaption}\item[{cv\+::\+Mat}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file thermometry.\+cpp.
+
+\mbox{\Hypertarget{classthermometry_a929c584c166300102a2b94212db13a58}\label{classthermometry_a929c584c166300102a2b94212db13a58}} 
+\index{thermometry@{thermometry}!unmark@{unmark}}
+\index{unmark@{unmark}!thermometry@{thermometry}}
+\doxysubsubsection{\texorpdfstring{unmark()}{unmark()}}
+{\footnotesize\ttfamily void thermometry\+::unmark (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 199 of file thermometry.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Inc/\mbox{\hyperlink{thermometry_8hpp}{thermometry.\+hpp}}\item 
+Src/\mbox{\hyperlink{thermometry_8cpp}{thermometry.\+cpp}}\end{DoxyCompactItemize}

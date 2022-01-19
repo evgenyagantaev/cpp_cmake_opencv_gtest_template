@@ -1,0 +1,87 @@
+\hypertarget{class_key}{}\doxysection{Key$<$ Key\+\_\+pin $>$ Class Template Reference}
+\label{class_key}\index{Key$<$ Key\_pin $>$@{Key$<$ Key\_pin $>$}}
+
+
+Class that represents one key of device keyboard.  
+
+
+
+
+{\ttfamily \#include $<$Key.\+hpp$>$}
+
+
+
+Inheritance diagram for Key$<$ Key\+\_\+pin $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_key__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Key$<$ Key\+\_\+pin $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_key__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{group__interface__implementation_gada5d38d1ca46ac3caf66c683462bc6a2}{get\+\_\+state}} () const
+\item 
+virtual void \mbox{\hyperlink{group__interface__implementation_ga55bbc8d58c0e90809316f988ab4f0a85}{set\+\_\+state}} (bool state)
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{group__interface__implementation_ga5fe4c5dd2966a383a77a96113db0c03b}{get\+\_\+count}} () const
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{group__interface__implementation_ga39857e6ab36c15b91532e7a6a20472af}{increment\+\_\+count}} ()
+\item 
+virtual std\+::size\+\_\+t \mbox{\hyperlink{group__interface__implementation_ga9b946a1867a7c0537a63caea1a7c8087}{reset\+\_\+count}} ()
+\item 
+virtual gpio\+\_\+num\+\_\+t \mbox{\hyperlink{group__interface__implementation_ga5b6a44ab5d75e5ae9ebe04d558a7ece4}{get\+\_\+pin}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_key}{Key}} \& \mbox{\hyperlink{class_key_a74ac259ced9645579436bf666140273a}{get\+\_\+instance}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates singleton object. Object is created in static memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$gpio\+\_\+num\+\_\+t Key\+\_\+pin$>$\newline
+class Key$<$ Key\+\_\+pin $>$}
+
+Class that represents one key of device keyboard. 
+
+This is a Meyers\textquotesingle{}s singleton template; parameterized by elements of gpio\+\_\+num\+\_\+t type\+: Key\+\_\+pin which is a esp32 pin, key is hardwired to. 
+
+Definition at line 71 of file Key.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_key_a74ac259ced9645579436bf666140273a}\label{class_key_a74ac259ced9645579436bf666140273a}} 
+\index{Key$<$ Key\_pin $>$@{Key$<$ Key\_pin $>$}!get\_instance@{get\_instance}}
+\index{get\_instance@{get\_instance}!Key$<$ Key\_pin $>$@{Key$<$ Key\_pin $>$}}
+\doxysubsubsection{\texorpdfstring{get\_instance()}{get\_instance()}}
+{\footnotesize\ttfamily template$<$gpio\+\_\+num\+\_\+t Key\+\_\+pin$>$ \\
+static \mbox{\hyperlink{class_key}{Key}}\& \mbox{\hyperlink{class_key}{Key}}$<$ Key\+\_\+pin $>$\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Instantiates singleton object. Object is created in static memory. 
+
+\begin{DoxyReturn}{Returns}
+Returnes instantiated object reference. 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file Key.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Inc/\mbox{\hyperlink{_key_8hpp}{Key.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,282 @@
+\hypertarget{thermometry_8hpp}{}\doxysection{Inc/thermometry.hpp File Reference}
+\label{thermometry_8hpp}\index{Inc/thermometry.hpp@{Inc/thermometry.hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}opencv\+\_\+headers.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thermo\+\_\+pixel.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thermo\+\_\+pixel\+\_\+vector.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}temperature\+\_\+range.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rect\+\_\+thermal\+\_\+spot.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utilities.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}unistd.\+h\char`\"{}}\newline
+Include dependency graph for thermometry.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermometry_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{thermometry_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_face_temperature}{Face\+Temperature}}
+\item 
+struct \mbox{\hyperlink{struct_face_position_info}{Face\+Position\+Info}}
+\item 
+class \mbox{\hyperlink{classthermometry}{thermometry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_aa10640f5b3465467817468def6fcf375}{TEMPERATURE\+\_\+\+LOW\+\_\+\+BOUND}}~33
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a708cb57715166273593008e5bdef63c0}{TEMPERATURE\+\_\+\+UP\+\_\+\+BOUND}}~40
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a74ec6a990f87a52a670e0c06141429ce}{DEFAULT\+\_\+\+ABB\+\_\+\+TEMPERATURE}}~41
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_ac2f6155ba740059ba32e0258767b0c6d}{DEFAULT\+\_\+\+BACKGROUND\+\_\+\+TEMPERATURE}}~27
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a3d42f008c52cff8e25cc6abea1091de9}{EYE\+\_\+\+WIDTH\+\_\+\+COEFF}}~(3.\+0 / 8.\+0)
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_ac0dcd25a9a98f6eba58e7126c48c5041}{EYE\+\_\+\+HEIGHT\+\_\+\+COEFF}}~(3.\+0 / 8.\+0)
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a619d6d93b8fbbf8baa38c276de3d3eaa}{AUX\+\_\+\+COEFF}}~(1.\+0 / 8.\+0)
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_ad495f7335d525531ee955871c8a362c1}{PRIMARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+EYE}}~8
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a8069a0686b93650e2dc4e4aa9d54d01f}{SECONDARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+EYE}}~3
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a4ebc3dca79f253056a5f97df3f0ff84e}{SECONDARY\+\_\+\+BASES\+\_\+\+NUMBER\+\_\+\+EYE}}~3
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_afb603dbd0ea1720a56a1ad3d5cde4993}{PRIMARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+FOREHEAD}}~23
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_aac26c45754a45071d0bbc56c39a11d40}{SECONDARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+FOREHEAD}}~7
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_aa1957f75e8f97b7b1a20450ce9557692}{SECONDARY\+\_\+\+BASES\+\_\+\+NUMBER\+\_\+\+FOREHEAD}}~5
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a1a9a9c00afe338bc70d17aeaca986f76}{RANDOM\+\_\+\+GENERATION\+\_\+\+TRY\+\_\+\+ATTEMPTS}}~50
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_ac04da6199cfc6ff0a83afbdf558de322}{HEAD\+\_\+\+CUT\+\_\+\+EYE}}~1
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_aec9520ee6b71366559ba3b8631f3996a}{CLASTER\+\_\+\+BODY\+\_\+\+EYE}}~7
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a97e95ac686bb981c52deac5e63f32d05}{HEAD\+\_\+\+CUT\+\_\+\+FOREHEAD}}~2
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a8cbe5be49cb181f72733138f216c976a}{CLASTER\+\_\+\+BODY\+\_\+\+FOREHEAD}}~9
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_a3eca8aaa465b9c4a55db40a4011df1a3}{DEFAULT\+\_\+\+T0}}~19.\+91
+\item 
+\#define \mbox{\hyperlink{thermometry_8hpp_ad54b5aa343ea5bb49b0bffbf02dd6d59}{DEFAULT\+\_\+K}}~0.\+0897
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{thermometry_8hpp_a619d6d93b8fbbf8baa38c276de3d3eaa}\label{thermometry_8hpp_a619d6d93b8fbbf8baa38c276de3d3eaa}} 
+\index{thermometry.hpp@{thermometry.hpp}!AUX\_COEFF@{AUX\_COEFF}}
+\index{AUX\_COEFF@{AUX\_COEFF}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{AUX\_COEFF}{AUX\_COEFF}}
+{\footnotesize\ttfamily \#define AUX\+\_\+\+COEFF~(1.\+0 / 8.\+0)}
+
+
+
+Definition at line 28 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_aec9520ee6b71366559ba3b8631f3996a}\label{thermometry_8hpp_aec9520ee6b71366559ba3b8631f3996a}} 
+\index{thermometry.hpp@{thermometry.hpp}!CLASTER\_BODY\_EYE@{CLASTER\_BODY\_EYE}}
+\index{CLASTER\_BODY\_EYE@{CLASTER\_BODY\_EYE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{CLASTER\_BODY\_EYE}{CLASTER\_BODY\_EYE}}
+{\footnotesize\ttfamily \#define CLASTER\+\_\+\+BODY\+\_\+\+EYE~7}
+
+
+
+Definition at line 40 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a8cbe5be49cb181f72733138f216c976a}\label{thermometry_8hpp_a8cbe5be49cb181f72733138f216c976a}} 
+\index{thermometry.hpp@{thermometry.hpp}!CLASTER\_BODY\_FOREHEAD@{CLASTER\_BODY\_FOREHEAD}}
+\index{CLASTER\_BODY\_FOREHEAD@{CLASTER\_BODY\_FOREHEAD}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{CLASTER\_BODY\_FOREHEAD}{CLASTER\_BODY\_FOREHEAD}}
+{\footnotesize\ttfamily \#define CLASTER\+\_\+\+BODY\+\_\+\+FOREHEAD~9}
+
+
+
+Definition at line 42 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a74ec6a990f87a52a670e0c06141429ce}\label{thermometry_8hpp_a74ec6a990f87a52a670e0c06141429ce}} 
+\index{thermometry.hpp@{thermometry.hpp}!DEFAULT\_ABB\_TEMPERATURE@{DEFAULT\_ABB\_TEMPERATURE}}
+\index{DEFAULT\_ABB\_TEMPERATURE@{DEFAULT\_ABB\_TEMPERATURE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ABB\_TEMPERATURE}{DEFAULT\_ABB\_TEMPERATURE}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+ABB\+\_\+\+TEMPERATURE~41}
+
+
+
+Definition at line 23 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_ac2f6155ba740059ba32e0258767b0c6d}\label{thermometry_8hpp_ac2f6155ba740059ba32e0258767b0c6d}} 
+\index{thermometry.hpp@{thermometry.hpp}!DEFAULT\_BACKGROUND\_TEMPERATURE@{DEFAULT\_BACKGROUND\_TEMPERATURE}}
+\index{DEFAULT\_BACKGROUND\_TEMPERATURE@{DEFAULT\_BACKGROUND\_TEMPERATURE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_BACKGROUND\_TEMPERATURE}{DEFAULT\_BACKGROUND\_TEMPERATURE}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+BACKGROUND\+\_\+\+TEMPERATURE~27}
+
+
+
+Definition at line 24 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_ad54b5aa343ea5bb49b0bffbf02dd6d59}\label{thermometry_8hpp_ad54b5aa343ea5bb49b0bffbf02dd6d59}} 
+\index{thermometry.hpp@{thermometry.hpp}!DEFAULT\_K@{DEFAULT\_K}}
+\index{DEFAULT\_K@{DEFAULT\_K}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_K}{DEFAULT\_K}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+K~0.\+0897}
+
+
+
+Definition at line 45 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a3eca8aaa465b9c4a55db40a4011df1a3}\label{thermometry_8hpp_a3eca8aaa465b9c4a55db40a4011df1a3}} 
+\index{thermometry.hpp@{thermometry.hpp}!DEFAULT\_T0@{DEFAULT\_T0}}
+\index{DEFAULT\_T0@{DEFAULT\_T0}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_T0}{DEFAULT\_T0}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+T0~19.\+91}
+
+
+
+Definition at line 44 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_ac0dcd25a9a98f6eba58e7126c48c5041}\label{thermometry_8hpp_ac0dcd25a9a98f6eba58e7126c48c5041}} 
+\index{thermometry.hpp@{thermometry.hpp}!EYE\_HEIGHT\_COEFF@{EYE\_HEIGHT\_COEFF}}
+\index{EYE\_HEIGHT\_COEFF@{EYE\_HEIGHT\_COEFF}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{EYE\_HEIGHT\_COEFF}{EYE\_HEIGHT\_COEFF}}
+{\footnotesize\ttfamily \#define EYE\+\_\+\+HEIGHT\+\_\+\+COEFF~(3.\+0 / 8.\+0)}
+
+
+
+Definition at line 27 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a3d42f008c52cff8e25cc6abea1091de9}\label{thermometry_8hpp_a3d42f008c52cff8e25cc6abea1091de9}} 
+\index{thermometry.hpp@{thermometry.hpp}!EYE\_WIDTH\_COEFF@{EYE\_WIDTH\_COEFF}}
+\index{EYE\_WIDTH\_COEFF@{EYE\_WIDTH\_COEFF}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{EYE\_WIDTH\_COEFF}{EYE\_WIDTH\_COEFF}}
+{\footnotesize\ttfamily \#define EYE\+\_\+\+WIDTH\+\_\+\+COEFF~(3.\+0 / 8.\+0)}
+
+
+
+Definition at line 26 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_ac04da6199cfc6ff0a83afbdf558de322}\label{thermometry_8hpp_ac04da6199cfc6ff0a83afbdf558de322}} 
+\index{thermometry.hpp@{thermometry.hpp}!HEAD\_CUT\_EYE@{HEAD\_CUT\_EYE}}
+\index{HEAD\_CUT\_EYE@{HEAD\_CUT\_EYE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{HEAD\_CUT\_EYE}{HEAD\_CUT\_EYE}}
+{\footnotesize\ttfamily \#define HEAD\+\_\+\+CUT\+\_\+\+EYE~1}
+
+
+
+Definition at line 39 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a97e95ac686bb981c52deac5e63f32d05}\label{thermometry_8hpp_a97e95ac686bb981c52deac5e63f32d05}} 
+\index{thermometry.hpp@{thermometry.hpp}!HEAD\_CUT\_FOREHEAD@{HEAD\_CUT\_FOREHEAD}}
+\index{HEAD\_CUT\_FOREHEAD@{HEAD\_CUT\_FOREHEAD}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{HEAD\_CUT\_FOREHEAD}{HEAD\_CUT\_FOREHEAD}}
+{\footnotesize\ttfamily \#define HEAD\+\_\+\+CUT\+\_\+\+FOREHEAD~2}
+
+
+
+Definition at line 41 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_ad495f7335d525531ee955871c8a362c1}\label{thermometry_8hpp_ad495f7335d525531ee955871c8a362c1}} 
+\index{thermometry.hpp@{thermometry.hpp}!PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE@{PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE}}
+\index{PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE@{PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE}{PRIMARY\_RANDOM\_POINTS\_NUMBER\_EYE}}
+{\footnotesize\ttfamily \#define PRIMARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+EYE~8}
+
+
+
+Definition at line 30 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_afb603dbd0ea1720a56a1ad3d5cde4993}\label{thermometry_8hpp_afb603dbd0ea1720a56a1ad3d5cde4993}} 
+\index{thermometry.hpp@{thermometry.hpp}!PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD@{PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}}
+\index{PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD@{PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}{PRIMARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}}
+{\footnotesize\ttfamily \#define PRIMARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+FOREHEAD~23}
+
+
+
+Definition at line 33 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a1a9a9c00afe338bc70d17aeaca986f76}\label{thermometry_8hpp_a1a9a9c00afe338bc70d17aeaca986f76}} 
+\index{thermometry.hpp@{thermometry.hpp}!RANDOM\_GENERATION\_TRY\_ATTEMPTS@{RANDOM\_GENERATION\_TRY\_ATTEMPTS}}
+\index{RANDOM\_GENERATION\_TRY\_ATTEMPTS@{RANDOM\_GENERATION\_TRY\_ATTEMPTS}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{RANDOM\_GENERATION\_TRY\_ATTEMPTS}{RANDOM\_GENERATION\_TRY\_ATTEMPTS}}
+{\footnotesize\ttfamily \#define RANDOM\+\_\+\+GENERATION\+\_\+\+TRY\+\_\+\+ATTEMPTS~50}
+
+
+
+Definition at line 37 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a4ebc3dca79f253056a5f97df3f0ff84e}\label{thermometry_8hpp_a4ebc3dca79f253056a5f97df3f0ff84e}} 
+\index{thermometry.hpp@{thermometry.hpp}!SECONDARY\_BASES\_NUMBER\_EYE@{SECONDARY\_BASES\_NUMBER\_EYE}}
+\index{SECONDARY\_BASES\_NUMBER\_EYE@{SECONDARY\_BASES\_NUMBER\_EYE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{SECONDARY\_BASES\_NUMBER\_EYE}{SECONDARY\_BASES\_NUMBER\_EYE}}
+{\footnotesize\ttfamily \#define SECONDARY\+\_\+\+BASES\+\_\+\+NUMBER\+\_\+\+EYE~3}
+
+
+
+Definition at line 32 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_aa1957f75e8f97b7b1a20450ce9557692}\label{thermometry_8hpp_aa1957f75e8f97b7b1a20450ce9557692}} 
+\index{thermometry.hpp@{thermometry.hpp}!SECONDARY\_BASES\_NUMBER\_FOREHEAD@{SECONDARY\_BASES\_NUMBER\_FOREHEAD}}
+\index{SECONDARY\_BASES\_NUMBER\_FOREHEAD@{SECONDARY\_BASES\_NUMBER\_FOREHEAD}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{SECONDARY\_BASES\_NUMBER\_FOREHEAD}{SECONDARY\_BASES\_NUMBER\_FOREHEAD}}
+{\footnotesize\ttfamily \#define SECONDARY\+\_\+\+BASES\+\_\+\+NUMBER\+\_\+\+FOREHEAD~5}
+
+
+
+Definition at line 35 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a8069a0686b93650e2dc4e4aa9d54d01f}\label{thermometry_8hpp_a8069a0686b93650e2dc4e4aa9d54d01f}} 
+\index{thermometry.hpp@{thermometry.hpp}!SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE@{SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE}}
+\index{SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE@{SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE}{SECONDARY\_RANDOM\_POINTS\_NUMBER\_EYE}}
+{\footnotesize\ttfamily \#define SECONDARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+EYE~3}
+
+
+
+Definition at line 31 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_aac26c45754a45071d0bbc56c39a11d40}\label{thermometry_8hpp_aac26c45754a45071d0bbc56c39a11d40}} 
+\index{thermometry.hpp@{thermometry.hpp}!SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD@{SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}}
+\index{SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD@{SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}{SECONDARY\_RANDOM\_POINTS\_NUMBER\_FOREHEAD}}
+{\footnotesize\ttfamily \#define SECONDARY\+\_\+\+RANDOM\+\_\+\+POINTS\+\_\+\+NUMBER\+\_\+\+FOREHEAD~7}
+
+
+
+Definition at line 34 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_aa10640f5b3465467817468def6fcf375}\label{thermometry_8hpp_aa10640f5b3465467817468def6fcf375}} 
+\index{thermometry.hpp@{thermometry.hpp}!TEMPERATURE\_LOW\_BOUND@{TEMPERATURE\_LOW\_BOUND}}
+\index{TEMPERATURE\_LOW\_BOUND@{TEMPERATURE\_LOW\_BOUND}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{TEMPERATURE\_LOW\_BOUND}{TEMPERATURE\_LOW\_BOUND}}
+{\footnotesize\ttfamily \#define TEMPERATURE\+\_\+\+LOW\+\_\+\+BOUND~33}
+
+
+
+Definition at line 20 of file thermometry.\+hpp.
+
+\mbox{\Hypertarget{thermometry_8hpp_a708cb57715166273593008e5bdef63c0}\label{thermometry_8hpp_a708cb57715166273593008e5bdef63c0}} 
+\index{thermometry.hpp@{thermometry.hpp}!TEMPERATURE\_UP\_BOUND@{TEMPERATURE\_UP\_BOUND}}
+\index{TEMPERATURE\_UP\_BOUND@{TEMPERATURE\_UP\_BOUND}!thermometry.hpp@{thermometry.hpp}}
+\doxysubsubsection{\texorpdfstring{TEMPERATURE\_UP\_BOUND}{TEMPERATURE\_UP\_BOUND}}
+{\footnotesize\ttfamily \#define TEMPERATURE\+\_\+\+UP\+\_\+\+BOUND~40}
+
+
+
+Definition at line 21 of file thermometry.\+hpp.
+

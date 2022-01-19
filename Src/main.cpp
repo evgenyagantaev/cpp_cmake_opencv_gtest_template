@@ -1,3 +1,6 @@
+// doxygen documentation
+#include "doxygen_mainpage.cpp"
+
 #include <iostream>
 #include <string>
 #include <sstream>
@@ -21,22 +24,18 @@ using namespace std;
 //*****************************************************************************************
 //*****************************************************************************************
 
-#include "drob.hpp"
+#include "Key.hpp"
 
 int main( int argc, const char** argv )
 {
 
-    Drob sixSeven{6, 7};
-    Drob eight = Drob(8);
-    Drob nine = 9;
-
-    Drob dCopy(sixSeven);
-
-    cout << sixSeven << endl;
-    cout << eight << endl;
-    cout << nine << endl;
-
-    cout << dCopy << endl;
+    Key<GPIO_NUM_0>& key0_ref =  Key<GPIO_NUM_0>::get_instance();
+    key0_ref.increment_count();
+    cout << endl << key0_ref.get_count() << endl;
+    key0_ref.increment_count();
+    cout << key0_ref.get_count() << endl;
+    key0_ref.increment_count();
+    cout << key0_ref.get_count() << endl;
 
     waitKey();
     
