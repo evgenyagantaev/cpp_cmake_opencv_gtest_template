@@ -26,10 +26,22 @@ using namespace std;
 
 #include "Key.hpp"
 
+namespace
+{
 int tst_fn()
 {
     cout << endl << "tst_fn call" << endl;
     return 17;
+}
+}
+
+namespace tst
+{
+int tst_fn()
+{
+    cout << endl << "tst_fn call" << endl;
+    return 15;
+}
 }
 
 class Tst_functor
@@ -43,10 +55,12 @@ class Tst_functor
     }
 };
 
+
+
 int main( int argc, const char** argv )
 {
 
-    cout << endl << tst_fn() << endl << "-----------------" << endl;
+    cout << endl << tst::tst_fn() << endl << "-----------------" << endl;
 
     typedef int (*int_call_void_pointer)();
     int_call_void_pointer fn_pntr;
