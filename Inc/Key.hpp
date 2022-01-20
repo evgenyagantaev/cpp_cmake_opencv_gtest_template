@@ -8,14 +8,11 @@
         +get_count()
         +increment_count()
         +reset_count()
+        +bind_pin(gpio_num_t  pin)
         +get_pin()
     }
 
-    note top of Key 
-    singleton
-    end note
-
-    class Key <gpio_num_t Key_pin>
+    class Key 
     {
         -pressed
         -count_ms
@@ -32,6 +29,7 @@
         +get_count()        
         +increment_count()
         +reset_count()
+        +bind_pin(gpio_num_t  pin)
         +get_pin()
     }
 
@@ -55,7 +53,7 @@
 class I_Key
 {
     public:
-    
+
     virtual bool get_state() const = 0;
     virtual void set_state(bool state) = 0;
     virtual std::size_t get_count() const = 0;

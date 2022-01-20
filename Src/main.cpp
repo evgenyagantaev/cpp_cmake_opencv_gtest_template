@@ -26,50 +26,60 @@ using namespace std;
 
 #include "Key.hpp"
 
+int tst_fn()
+{
+    cout << endl << "tst_fn call" << endl;
+    return 17;
+}
+
+class Tst_functor
+{
+    public:
+
+    int operator()()
+    {
+        cout << endl << "functor call" << endl;
+        return 147;
+    }
+};
+
 int main( int argc, const char** argv )
 {
 
-    Key<GPIO_NUM_0>& key0_ref =  Key<GPIO_NUM_0>::get_instance();
-    key0_ref.increment_count();
-    cout << endl << key0_ref.get_count() << endl;
-    key0_ref.increment_count();
-    cout << key0_ref.get_count() << endl;
-    key0_ref.increment_count();
-    cout << key0_ref.get_count() << endl;
+    cout << endl << tst_fn() << endl << "-----------------" << endl;
 
-    Key<GPIO_NUM_7>& key7_ref =  Key<GPIO_NUM_7>::get_instance();
-    key7_ref.increment_count();
-    cout << endl << key7_ref.get_pin() << endl;
-    key7_ref.increment_count();
-    cout << key7_ref.get_count() << endl;
-    key7_ref.increment_count();
-    cout << key7_ref.get_count() << endl;
-
-    Key<key_pins_t::pins[0]>& key1_ref = Key<key_pins_t::pins[0]>::get_instance();
-    cout << endl << key1_ref.get_pin() << endl;
-    cout << typeid(Key<key_pins_t::pins[0]>).name() << endl;
-
-    Key<key_pins_t::pins[1]>& key2_ref = Key<key_pins_t::pins[1]>::get_instance();
-    cout << endl << key2_ref.get_pin() << endl;
-    cout << typeid(Key<key_pins_t::pins[1]>).name() << endl;
-
-    Key<key_pins_t::pins[2]>& key3_ref = Key<key_pins_t::pins[2]>::get_instance();
-    cout << endl << key3_ref.get_pin() << endl;
-    cout << typeid(Key<key_pins_t::pins[2]>).name() << endl;
-
-    Key<key_pins_t::pins[3]>& key4_ref = Key<key_pins_t::pins[3]>::get_instance();
-    cout << endl << key4_ref.get_pin() << endl;
-    cout << typeid(Key<key_pins_t::pins[3]>).name() << endl;
+    typedef int (*int_call_void_pointer)();
+    int_call_void_pointer fn_pntr;
+    fn_pntr = &tst_fn;
     
+    cout << endl << (*fn_pntr)() << endl << "-----------------" << endl;
 
-    /*
-    for(const auto& element: key_pins_t)
+    auto tst_lambda1
     {
-        Key<element>& key_ref = Key<element>::get_instance();
-        cout << endl << key_ref.get_pin() << endl;
-        cout << typeid(Key<element>).name() << endl;
-    }
-    */
+        []() -> int
+        {
+            cout << endl << "lambda call" << endl;
+            return 19;
+        }
+    };
+
+    cout << endl << tst_lambda1()  << endl << "-----------------" << endl;
+
+    std::function<int()> tst_lambda2
+    {
+        []() -> int
+        {
+            cout << endl << "lambda call" << endl;
+            return 21;
+        }
+    };
+
+    cout << endl << tst_lambda2()  << endl << "-----------------" << endl;
+
+    Tst_functor tst_functor;
+
+    cout << endl << tst_functor()  << endl << "-----------------" << endl;    
+
 
     waitKey();
     
