@@ -46,10 +46,16 @@
 #include <cstring>
 
 /*!
+ @brief 
+*/
+
+/*!
  @brief Public interface of one device key 
 */
 class I_Key
 {
+    public:
+    
     virtual bool get_state() const = 0;
     virtual void set_state(bool state) = 0;
     virtual std::size_t get_count() const = 0;

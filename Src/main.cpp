@@ -37,6 +37,40 @@ int main( int argc, const char** argv )
     key0_ref.increment_count();
     cout << key0_ref.get_count() << endl;
 
+    Key<GPIO_NUM_7>& key7_ref =  Key<GPIO_NUM_7>::get_instance();
+    key7_ref.increment_count();
+    cout << endl << key7_ref.get_pin() << endl;
+    key7_ref.increment_count();
+    cout << key7_ref.get_count() << endl;
+    key7_ref.increment_count();
+    cout << key7_ref.get_count() << endl;
+
+    Key<key_pins_t::pins[0]>& key1_ref = Key<key_pins_t::pins[0]>::get_instance();
+    cout << endl << key1_ref.get_pin() << endl;
+    cout << typeid(Key<key_pins_t::pins[0]>).name() << endl;
+
+    Key<key_pins_t::pins[1]>& key2_ref = Key<key_pins_t::pins[1]>::get_instance();
+    cout << endl << key2_ref.get_pin() << endl;
+    cout << typeid(Key<key_pins_t::pins[1]>).name() << endl;
+
+    Key<key_pins_t::pins[2]>& key3_ref = Key<key_pins_t::pins[2]>::get_instance();
+    cout << endl << key3_ref.get_pin() << endl;
+    cout << typeid(Key<key_pins_t::pins[2]>).name() << endl;
+
+    Key<key_pins_t::pins[3]>& key4_ref = Key<key_pins_t::pins[3]>::get_instance();
+    cout << endl << key4_ref.get_pin() << endl;
+    cout << typeid(Key<key_pins_t::pins[3]>).name() << endl;
+    
+
+    /*
+    for(const auto& element: key_pins_t)
+    {
+        Key<element>& key_ref = Key<element>::get_instance();
+        cout << endl << key_ref.get_pin() << endl;
+        cout << typeid(Key<element>).name() << endl;
+    }
+    */
+
     waitKey();
     
     /*

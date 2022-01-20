@@ -43,3 +43,9 @@ typedef enum {
     GPIO_NUM_39 = 39,   /*!< GPIO39, input mode only */
     GPIO_NUM_MAX,
 } gpio_num_t;
+
+struct key_pins_t
+{
+    constexpr static gpio_num_t pins[] = {GPIO_NUM_0, GPIO_NUM_11, GPIO_NUM_23, GPIO_NUM_37};
+    
+};
