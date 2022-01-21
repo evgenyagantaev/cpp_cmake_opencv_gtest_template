@@ -21,17 +21,11 @@
         -Key(const Key&)
         -Key& operator=(const Key&)
         -~Key()
-        -----
-        +{static} Key& get_instance()
-        .....
-        +get_state()
-        +set_state(bool state)
-        +get_count()        
-        +increment_count()
-        +reset_count()
-        +bind_pin(gpio_num_t  pin)
-        +get_pin()
     }
+
+    class Key_factory
+
+    Key_factory -> Key : creates
 
     I_Key <|-up- Key : implements
  @enduml
@@ -71,32 +65,16 @@ class I_Key
 
 
 */
-template <gpio_num_t  Key_pin>
 class Key: public I_Key
 {
     private:
 
     bool pressed = false;
-    std::size_t count_ms = 0;
+    size_t count_ms = 0;
 
-    const gpio_num_t key_pin;
-
-    Key(): key_pin{Key_pin} {};
-    Key(const Key&) {};
-    Key& operator=(const Key&) {};
-    ~Key() {};
+    gpio_num_t key_pin;
 
     public:
-
-    /*!
-    @brief Instantiates singleton object. Object is created in static memory.
-    @return Returnes instantiated object reference.
-    */
-    static Key& get_instance()
-    {
-        static Key object;
-        return object;
-    };
 
     /*!
     @defgroup interface_implementation This module implements interface I_Key
