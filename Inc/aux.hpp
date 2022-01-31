@@ -44,8 +44,21 @@ typedef enum {
     GPIO_NUM_MAX,
 } gpio_num_t;
 
-struct key_pins_t
-{
-    constexpr static gpio_num_t pins[] = {GPIO_NUM_0, GPIO_NUM_11, GPIO_NUM_23, GPIO_NUM_37};
-    
-};
+#define POWER_ON   GPIO_NUM_16
+#define S1_PIN     GPIO_NUM_34
+#define S2_PIN     GPIO_NUM_35
+#define S3_PIN     GPIO_NUM_36
+#define S4_PIN     GPIO_NUM_39
+#define SENSOR_CS  GPIO_NUM_21
+#define DISPLAY_CS GPIO_NUM_22
+
+typedef enum {
+    GPIO_MODE_DISABLE = 0,          
+    GPIO_MODE_INPUT,
+    GPIO_MODE_OUTPUT,
+    GPIO_MODE_OUTPUT_OD,
+    GPIO_MODE_INPUT_OUTPUT_OD,
+    GPIO_MODE_INPUT_OUTPUT,
+} gpio_mode_t;
+
+void gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);

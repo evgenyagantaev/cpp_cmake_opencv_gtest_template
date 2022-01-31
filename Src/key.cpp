@@ -1,18 +1,12 @@
 #include "key.hpp"
 #include "key_factory.hpp"
 
+
+
 /// @brief create anonymous namespace to isolate names in accordance with factory pattern 
 namespace
 {
-    /*
-    Key* create_key_obj()
-    {
-        return new Key;
-    }
-    */
 
-    /// @brief integer class identificator for object production factory class
-    const int KEY_CLASS_ID = 1;
 
     /// @brief artificial syntax construction just to call registration function
     const bool key_creation_callback_registered = 
@@ -22,4 +16,12 @@ namespace
             {return new Key;}
         );
 
+    
+
 } // namespace
+
+bool Key::bind_pin(gpio_num_t pin)
+{
+    key_pin = pin;
+    gpio_set_direction(key_pin, GPIO_MODE_INPUT);
+}

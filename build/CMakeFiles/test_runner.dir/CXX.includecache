@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Inc/aux.hpp
+
+/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp
+aux.hpp
+/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.hpp
+

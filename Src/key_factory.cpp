@@ -50,6 +50,7 @@
 
         if(iterator != callback_map.end())
         {
+            items_created++;
             /// call creation callback
             return (iterator->second)();
         }

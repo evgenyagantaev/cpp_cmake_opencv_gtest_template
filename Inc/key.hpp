@@ -17,10 +17,6 @@
         -pressed
         -count_ms
         -key_pin
-        -Key()
-        -Key(const Key&)
-        -Key& operator=(const Key&)
-        -~Key()
     }
 
     class Key_factory
@@ -34,8 +30,10 @@
 #pragma once
 
 #include "main.hpp"
-
 #include <cstring>
+
+/// @brief integer class identificator for object production factory class
+const int KEY_CLASS_ID = 1;
 
 /*!
  @brief 
@@ -54,14 +52,14 @@ class I_Key
     virtual std::size_t increment_count() = 0;
     virtual std::size_t reset_count() = 0;
 
+    virtual bool bind_pin(gpio_num_t pin) = 0;
     virtual gpio_num_t get_pin() const = 0;
 };
 
 /*!
  @brief Class that represents one key of device keyboard
  @details 
-    This is a Meyers's singleton template; parameterized by elements of gpio_num_t type: Key_pin
-    which is a esp32 pin, key is hardwired to.
+    
 
 
 */
@@ -107,6 +105,8 @@ class Key: public I_Key
         count_ms = 0;
         return count_ms;
     };
+
+    virtual bool bind_pin(gpio_num_t pin);
 
     virtual gpio_num_t get_pin() const
     {

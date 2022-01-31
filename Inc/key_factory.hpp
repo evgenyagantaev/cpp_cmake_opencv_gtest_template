@@ -11,6 +11,7 @@
     {
         -typedef std::map<size_t, creation_callback_t> callback_map_t
         -callback_map_t callback_map
+        -size_t items_created
         .....
         -Key_factory()
         -Key_factory(const Key_factory&)
@@ -23,6 +24,9 @@
         +bool register_creation_callback(int ID, callback_pointer)
         +bool unregister_creation_callback(int ID)
         +Key* create(ID)
+        .....
+        +size_t get_map_size()
+        +size_t get_items_created()
     }
 
     note left of Key_factory::get_instance()
@@ -62,7 +66,8 @@ class Key_factory
 
     typedef std::map<int, creation_callback_t> callback_map_t;
     callback_map_t callback_map;
-
+    size_t items_created = 0;
+    
     //*****************
 
     Key_factory(){};
@@ -97,5 +102,17 @@ class Key_factory
     /// @param id integer callback identificator; 
     /// @returns pointer to newly created object of Key type
     Key* create(int id);
+
+    /// @brief returns current length of callback map; just for unit testing
+    /// @returns current length of callback map
+    size_t get_map_size()
+    {
+        return callback_map.size();
+    }
+
+    size_t get_items_created()
+    {
+        return items_created;
+    }
 
 };
