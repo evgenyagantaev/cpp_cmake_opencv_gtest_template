@@ -67,6 +67,8 @@ class I_Key
 
  @startuml
 
+    caption: check state of key polling algorithm
+
     start
 
     : KEY_POLLING_PERIOD = 10 miliseconds;

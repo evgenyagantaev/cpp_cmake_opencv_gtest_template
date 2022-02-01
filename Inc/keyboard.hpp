@@ -56,12 +56,35 @@
 
 class I_Keyboard
 {
-    virtual std::vector<Key> get_keys();
+    public:
 
 };
 
 
+/*!
+ @startuml
 
+    object a { 
+        not pressed 
+    }
+    object A {
+        short press 
+    }
+    object AA {
+        long press
+    }
+    object AaA {
+        double click
+    }
+
+    object keys {
+        abcd
+    }
+
+    caption keyboard state word
+
+ @enduml
+*/
 
 
 class Keyboard: public I_Keyboard
@@ -91,3 +114,29 @@ class Keyboard: public I_Keyboard
     void keyboard_action();
 
 };
+
+/*!
+ @startuml
+
+    caption: main loop of keyboard action thread
+
+    start
+
+    : KEY_POLLING_PERIOD = 10 miliseconds;
+    :read current system tick counter;
+
+    if ( (current system tick counter - saved tick counter) >= 
+            KEY_POLLING_PERIOD) then (yes )
+
+        : update keys state;
+        : read current keys state;
+        : assemble keyboard current state word;
+        : saved tick counter = current system tick counter;
+    
+    endif
+
+    stop
+
+ @enduml
+
+ */
