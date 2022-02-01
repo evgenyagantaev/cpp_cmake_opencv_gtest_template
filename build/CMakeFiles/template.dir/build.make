@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template
+CMAKE_SOURCE_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build
+CMAKE_BINARY_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/template.dir/depend.make
@@ -59,185 +59,81 @@ include CMakeFiles/template.dir/flags.make
 
 CMakeFiles/template.dir/Src/aux.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/aux.cpp.o: ../Src/aux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/template.dir/Src/aux.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/aux.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/template.dir/Src/aux.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/aux.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp
 
 CMakeFiles/template.dir/Src/aux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/aux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp > CMakeFiles/template.dir/Src/aux.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp > CMakeFiles/template.dir/Src/aux.cpp.i
 
 CMakeFiles/template.dir/Src/aux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/aux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp -o CMakeFiles/template.dir/Src/aux.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/aux.cpp -o CMakeFiles/template.dir/Src/aux.cpp.s
 
 CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o: ../Src/doxygen_mainpage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp
 
 CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp > CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp > CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.i
 
 CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp -o CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/doxygen_mainpage.cpp -o CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.s
 
 CMakeFiles/template.dir/Src/key.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/key.cpp.o: ../Src/key.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/template.dir/Src/key.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/key.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/template.dir/Src/key.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/key.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp
 
 CMakeFiles/template.dir/Src/key.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/key.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp > CMakeFiles/template.dir/Src/key.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp > CMakeFiles/template.dir/Src/key.cpp.i
 
 CMakeFiles/template.dir/Src/key.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/key.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp -o CMakeFiles/template.dir/Src/key.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key.cpp -o CMakeFiles/template.dir/Src/key.cpp.s
 
 CMakeFiles/template.dir/Src/key_factory.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/key_factory.cpp.o: ../Src/key_factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/template.dir/Src/key_factory.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/key_factory.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/template.dir/Src/key_factory.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/key_factory.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp
 
 CMakeFiles/template.dir/Src/key_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/key_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp > CMakeFiles/template.dir/Src/key_factory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp > CMakeFiles/template.dir/Src/key_factory.cpp.i
 
 CMakeFiles/template.dir/Src/key_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/key_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp -o CMakeFiles/template.dir/Src/key_factory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/key_factory.cpp -o CMakeFiles/template.dir/Src/key_factory.cpp.s
 
 CMakeFiles/template.dir/Src/main.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/main.cpp.o: ../Src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/template.dir/Src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/main.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/template.dir/Src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/main.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp
 
 CMakeFiles/template.dir/Src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp > CMakeFiles/template.dir/Src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp > CMakeFiles/template.dir/Src/main.cpp.i
 
 CMakeFiles/template.dir/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp -o CMakeFiles/template.dir/Src/main.cpp.s
-
-CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o: ../Src/rect_thermal_spot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/rect_thermal_spot.cpp
-
-CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/rect_thermal_spot.cpp > CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.i
-
-CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/rect_thermal_spot.cpp -o CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.s
-
-CMakeFiles/template.dir/Src/sample1.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/sample1.cpp.o: ../Src/sample1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/template.dir/Src/sample1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/sample1.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample1.cpp
-
-CMakeFiles/template.dir/Src/sample1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/sample1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample1.cpp > CMakeFiles/template.dir/Src/sample1.cpp.i
-
-CMakeFiles/template.dir/Src/sample1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/sample1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample1.cpp -o CMakeFiles/template.dir/Src/sample1.cpp.s
-
-CMakeFiles/template.dir/Src/sample2.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/sample2.cpp.o: ../Src/sample2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/template.dir/Src/sample2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/sample2.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample2.cpp
-
-CMakeFiles/template.dir/Src/sample2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/sample2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample2.cpp > CMakeFiles/template.dir/Src/sample2.cpp.i
-
-CMakeFiles/template.dir/Src/sample2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/sample2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/sample2.cpp -o CMakeFiles/template.dir/Src/sample2.cpp.s
-
-CMakeFiles/template.dir/Src/space_transformer.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/space_transformer.cpp.o: ../Src/space_transformer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/template.dir/Src/space_transformer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/space_transformer.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/space_transformer.cpp
-
-CMakeFiles/template.dir/Src/space_transformer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/space_transformer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/space_transformer.cpp > CMakeFiles/template.dir/Src/space_transformer.cpp.i
-
-CMakeFiles/template.dir/Src/space_transformer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/space_transformer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/space_transformer.cpp -o CMakeFiles/template.dir/Src/space_transformer.cpp.s
-
-CMakeFiles/template.dir/Src/temperature_range.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/temperature_range.cpp.o: ../Src/temperature_range.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/template.dir/Src/temperature_range.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/temperature_range.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/temperature_range.cpp
-
-CMakeFiles/template.dir/Src/temperature_range.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/temperature_range.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/temperature_range.cpp > CMakeFiles/template.dir/Src/temperature_range.cpp.i
-
-CMakeFiles/template.dir/Src/temperature_range.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/temperature_range.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/temperature_range.cpp -o CMakeFiles/template.dir/Src/temperature_range.cpp.s
-
-CMakeFiles/template.dir/Src/thermo_pixel.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/thermo_pixel.cpp.o: ../Src/thermo_pixel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/template.dir/Src/thermo_pixel.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/thermo_pixel.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel.cpp
-
-CMakeFiles/template.dir/Src/thermo_pixel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/thermo_pixel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel.cpp > CMakeFiles/template.dir/Src/thermo_pixel.cpp.i
-
-CMakeFiles/template.dir/Src/thermo_pixel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/thermo_pixel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel.cpp -o CMakeFiles/template.dir/Src/thermo_pixel.cpp.s
-
-CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o: ../Src/thermo_pixel_vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel_vector.cpp
-
-CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel_vector.cpp > CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.i
-
-CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermo_pixel_vector.cpp -o CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.s
-
-CMakeFiles/template.dir/Src/thermometry.cpp.o: CMakeFiles/template.dir/flags.make
-CMakeFiles/template.dir/Src/thermometry.cpp.o: ../Src/thermometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/template.dir/Src/thermometry.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/thermometry.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermometry.cpp
-
-CMakeFiles/template.dir/Src/thermometry.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/thermometry.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermometry.cpp > CMakeFiles/template.dir/Src/thermometry.cpp.i
-
-CMakeFiles/template.dir/Src/thermometry.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/thermometry.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/thermometry.cpp -o CMakeFiles/template.dir/Src/thermometry.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/main.cpp -o CMakeFiles/template.dir/Src/main.cpp.s
 
 CMakeFiles/template.dir/Src/utilities.cpp.o: CMakeFiles/template.dir/flags.make
 CMakeFiles/template.dir/Src/utilities.cpp.o: ../Src/utilities.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/template.dir/Src/utilities.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/utilities.cpp.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/template.dir/Src/utilities.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/template.dir/Src/utilities.cpp.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp
 
 CMakeFiles/template.dir/Src/utilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/template.dir/Src/utilities.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp > CMakeFiles/template.dir/Src/utilities.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp > CMakeFiles/template.dir/Src/utilities.cpp.i
 
 CMakeFiles/template.dir/Src/utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/template.dir/Src/utilities.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp -o CMakeFiles/template.dir/Src/utilities.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Src/utilities.cpp -o CMakeFiles/template.dir/Src/utilities.cpp.s
 
 # Object files for target template
 template_OBJECTS = \
@@ -246,14 +142,6 @@ template_OBJECTS = \
 "CMakeFiles/template.dir/Src/key.cpp.o" \
 "CMakeFiles/template.dir/Src/key_factory.cpp.o" \
 "CMakeFiles/template.dir/Src/main.cpp.o" \
-"CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o" \
-"CMakeFiles/template.dir/Src/sample1.cpp.o" \
-"CMakeFiles/template.dir/Src/sample2.cpp.o" \
-"CMakeFiles/template.dir/Src/space_transformer.cpp.o" \
-"CMakeFiles/template.dir/Src/temperature_range.cpp.o" \
-"CMakeFiles/template.dir/Src/thermo_pixel.cpp.o" \
-"CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o" \
-"CMakeFiles/template.dir/Src/thermometry.cpp.o" \
 "CMakeFiles/template.dir/Src/utilities.cpp.o"
 
 # External object files for target template
@@ -264,14 +152,6 @@ template: CMakeFiles/template.dir/Src/doxygen_mainpage.cpp.o
 template: CMakeFiles/template.dir/Src/key.cpp.o
 template: CMakeFiles/template.dir/Src/key_factory.cpp.o
 template: CMakeFiles/template.dir/Src/main.cpp.o
-template: CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o
-template: CMakeFiles/template.dir/Src/sample1.cpp.o
-template: CMakeFiles/template.dir/Src/sample2.cpp.o
-template: CMakeFiles/template.dir/Src/space_transformer.cpp.o
-template: CMakeFiles/template.dir/Src/temperature_range.cpp.o
-template: CMakeFiles/template.dir/Src/thermo_pixel.cpp.o
-template: CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o
-template: CMakeFiles/template.dir/Src/thermometry.cpp.o
 template: CMakeFiles/template.dir/Src/utilities.cpp.o
 template: CMakeFiles/template.dir/build.make
 template: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
@@ -323,7 +203,7 @@ template: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.2.0
 template: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.2.0
 template: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.2.0
 template: CMakeFiles/template.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable template"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable template"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/template.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -336,6 +216,6 @@ CMakeFiles/template.dir/clean:
 .PHONY : CMakeFiles/template.dir/clean
 
 CMakeFiles/template.dir/depend:
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles/template.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles/template.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/template.dir/depend
 

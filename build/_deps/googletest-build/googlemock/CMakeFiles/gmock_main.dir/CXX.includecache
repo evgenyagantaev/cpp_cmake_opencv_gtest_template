@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gmock_main.cc
+/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gmock_main.cc
 iostream
 -
 gmock/gmock.h
-/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gmock/gmock.h
+/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gmock/gmock.h
 gtest/gtest.h
-/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gtest/gtest.h
+/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/src/gtest/gtest.h
 tchar.h
 -
 

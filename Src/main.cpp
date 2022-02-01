@@ -1,18 +1,12 @@
 // doxygen documentation
 #include "doxygen_mainpage.cpp"
 
+#include "main.hpp"
+
 #include <iostream>
 #include <string>
 #include <sstream>
 #include <chrono>
-
-#include "thermometry.hpp"
-#include "utilities.hpp"
-
-
-#include "space_transformer.hpp"
-
-
 
 using namespace cv;
 using namespace std;
@@ -24,78 +18,12 @@ using namespace std;
 //*****************************************************************************************
 //*****************************************************************************************
 
-#include "key.hpp"
-
-namespace
-{
-int tst_fn()
-{
-    cout << endl << "tst_fn call" << endl;
-    return 17;
-}
-}
-
-namespace tst
-{
-int tst_fn()
-{
-    cout << endl << "tst_fn call" << endl;
-    return 15;
-}
-}
-
-class Tst_functor
-{
-    public:
-
-    int operator()()
-    {
-        cout << endl << "functor call" << endl;
-        return 147;
-    }
-};
-
 
 
 int main( int argc, const char** argv )
 {
 
-    cout << endl << tst::tst_fn() << endl << "-----------------" << endl;
-
-    typedef int (*int_call_void_pointer)();
-    int_call_void_pointer fn_pntr;
-    fn_pntr = &tst_fn;
     
-    cout << endl << (*fn_pntr)() << endl << "-----------------" << endl;
-
-    auto tst_lambda1
-    {
-        []() -> int
-        {
-            cout << endl << "lambda call" << endl;
-            return 19;
-        }
-    };
-
-    cout << endl << tst_lambda1()  << endl << "-----------------" << endl;
-
-    std::function<int()> tst_lambda2
-    {
-        []() -> int
-        {
-            cout << endl << "lambda call" << endl;
-            return 21;
-        }
-    };
-
-    cout << endl << tst_lambda2()  << endl << "-----------------" << endl;
-
-    Tst_functor tst_functor;
-
-    cout << endl << tst_functor()  << endl << "-----------------" << endl;    
-
-
-    waitKey();
     
     /*
     int threshold_value = 141;

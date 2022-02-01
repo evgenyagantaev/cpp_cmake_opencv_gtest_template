@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g   -Wall -Wshad
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googlemock -isystem /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock -isystem /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/include -isystem /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/include -isystem /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest 
+CXX_INCLUDES = -I/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googlemock -isystem /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock -isystem /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googlemock/include -isystem /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/include -isystem /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest 
 

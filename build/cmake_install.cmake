@@ -1,4 +1,4 @@
-# Install script for directory: /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template
+# Install script for directory: /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

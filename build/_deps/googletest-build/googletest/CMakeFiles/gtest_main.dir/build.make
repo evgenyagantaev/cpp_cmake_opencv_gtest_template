@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template
+CMAKE_SOURCE_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build
+CMAKE_BINARY_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build
 
 # Include any dependencies generated for this target.
 include _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -59,16 +59,16 @@ include _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/flags.make
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/flags.make
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: _deps/googletest-src/googletest/src/gtest_main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc > CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest/src/gtest_main.cc -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -80,9 +80,9 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_maind.a: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 lib/libgtest_maind.a: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_maind.a: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest_maind.a"
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgtest_maind.a"
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean_target.cmake
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_maind.a
@@ -90,10 +90,10 @@ _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest_main.dir/cmake_clean.cmake
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/clean
 
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend:
-	cd /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src/googletest /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 

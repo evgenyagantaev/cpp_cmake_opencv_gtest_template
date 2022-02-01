@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template
+CMAKE_SOURCE_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build
+CMAKE_BINARY_DIR = /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -392,246 +392,6 @@ Src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/main.cpp.s
 .PHONY : Src/main.cpp.s
 
-Src/rect_thermal_spot.o: Src/rect_thermal_spot.cpp.o
-
-.PHONY : Src/rect_thermal_spot.o
-
-# target to build an object file
-Src/rect_thermal_spot.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/rect_thermal_spot.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.o
-.PHONY : Src/rect_thermal_spot.cpp.o
-
-Src/rect_thermal_spot.i: Src/rect_thermal_spot.cpp.i
-
-.PHONY : Src/rect_thermal_spot.i
-
-# target to preprocess a source file
-Src/rect_thermal_spot.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/rect_thermal_spot.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.i
-.PHONY : Src/rect_thermal_spot.cpp.i
-
-Src/rect_thermal_spot.s: Src/rect_thermal_spot.cpp.s
-
-.PHONY : Src/rect_thermal_spot.s
-
-# target to generate assembly for a file
-Src/rect_thermal_spot.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/rect_thermal_spot.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/rect_thermal_spot.cpp.s
-.PHONY : Src/rect_thermal_spot.cpp.s
-
-Src/sample1.o: Src/sample1.cpp.o
-
-.PHONY : Src/sample1.o
-
-# target to build an object file
-Src/sample1.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample1.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample1.cpp.o
-.PHONY : Src/sample1.cpp.o
-
-Src/sample1.i: Src/sample1.cpp.i
-
-.PHONY : Src/sample1.i
-
-# target to preprocess a source file
-Src/sample1.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample1.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample1.cpp.i
-.PHONY : Src/sample1.cpp.i
-
-Src/sample1.s: Src/sample1.cpp.s
-
-.PHONY : Src/sample1.s
-
-# target to generate assembly for a file
-Src/sample1.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample1.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample1.cpp.s
-.PHONY : Src/sample1.cpp.s
-
-Src/sample2.o: Src/sample2.cpp.o
-
-.PHONY : Src/sample2.o
-
-# target to build an object file
-Src/sample2.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample2.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample2.cpp.o
-.PHONY : Src/sample2.cpp.o
-
-Src/sample2.i: Src/sample2.cpp.i
-
-.PHONY : Src/sample2.i
-
-# target to preprocess a source file
-Src/sample2.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample2.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample2.cpp.i
-.PHONY : Src/sample2.cpp.i
-
-Src/sample2.s: Src/sample2.cpp.s
-
-.PHONY : Src/sample2.s
-
-# target to generate assembly for a file
-Src/sample2.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/sample2.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/sample2.cpp.s
-.PHONY : Src/sample2.cpp.s
-
-Src/space_transformer.o: Src/space_transformer.cpp.o
-
-.PHONY : Src/space_transformer.o
-
-# target to build an object file
-Src/space_transformer.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/space_transformer.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/space_transformer.cpp.o
-.PHONY : Src/space_transformer.cpp.o
-
-Src/space_transformer.i: Src/space_transformer.cpp.i
-
-.PHONY : Src/space_transformer.i
-
-# target to preprocess a source file
-Src/space_transformer.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/space_transformer.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/space_transformer.cpp.i
-.PHONY : Src/space_transformer.cpp.i
-
-Src/space_transformer.s: Src/space_transformer.cpp.s
-
-.PHONY : Src/space_transformer.s
-
-# target to generate assembly for a file
-Src/space_transformer.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/space_transformer.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/space_transformer.cpp.s
-.PHONY : Src/space_transformer.cpp.s
-
-Src/temperature_range.o: Src/temperature_range.cpp.o
-
-.PHONY : Src/temperature_range.o
-
-# target to build an object file
-Src/temperature_range.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/temperature_range.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/temperature_range.cpp.o
-.PHONY : Src/temperature_range.cpp.o
-
-Src/temperature_range.i: Src/temperature_range.cpp.i
-
-.PHONY : Src/temperature_range.i
-
-# target to preprocess a source file
-Src/temperature_range.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/temperature_range.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/temperature_range.cpp.i
-.PHONY : Src/temperature_range.cpp.i
-
-Src/temperature_range.s: Src/temperature_range.cpp.s
-
-.PHONY : Src/temperature_range.s
-
-# target to generate assembly for a file
-Src/temperature_range.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/temperature_range.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/temperature_range.cpp.s
-.PHONY : Src/temperature_range.cpp.s
-
-Src/thermo_pixel.o: Src/thermo_pixel.cpp.o
-
-.PHONY : Src/thermo_pixel.o
-
-# target to build an object file
-Src/thermo_pixel.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel.cpp.o
-.PHONY : Src/thermo_pixel.cpp.o
-
-Src/thermo_pixel.i: Src/thermo_pixel.cpp.i
-
-.PHONY : Src/thermo_pixel.i
-
-# target to preprocess a source file
-Src/thermo_pixel.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel.cpp.i
-.PHONY : Src/thermo_pixel.cpp.i
-
-Src/thermo_pixel.s: Src/thermo_pixel.cpp.s
-
-.PHONY : Src/thermo_pixel.s
-
-# target to generate assembly for a file
-Src/thermo_pixel.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel.cpp.s
-.PHONY : Src/thermo_pixel.cpp.s
-
-Src/thermo_pixel_vector.o: Src/thermo_pixel_vector.cpp.o
-
-.PHONY : Src/thermo_pixel_vector.o
-
-# target to build an object file
-Src/thermo_pixel_vector.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel_vector.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.o
-.PHONY : Src/thermo_pixel_vector.cpp.o
-
-Src/thermo_pixel_vector.i: Src/thermo_pixel_vector.cpp.i
-
-.PHONY : Src/thermo_pixel_vector.i
-
-# target to preprocess a source file
-Src/thermo_pixel_vector.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel_vector.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.i
-.PHONY : Src/thermo_pixel_vector.cpp.i
-
-Src/thermo_pixel_vector.s: Src/thermo_pixel_vector.cpp.s
-
-.PHONY : Src/thermo_pixel_vector.s
-
-# target to generate assembly for a file
-Src/thermo_pixel_vector.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermo_pixel_vector.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermo_pixel_vector.cpp.s
-.PHONY : Src/thermo_pixel_vector.cpp.s
-
-Src/thermometry.o: Src/thermometry.cpp.o
-
-.PHONY : Src/thermometry.o
-
-# target to build an object file
-Src/thermometry.cpp.o:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermometry.cpp.o
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermometry.cpp.o
-.PHONY : Src/thermometry.cpp.o
-
-Src/thermometry.i: Src/thermometry.cpp.i
-
-.PHONY : Src/thermometry.i
-
-# target to preprocess a source file
-Src/thermometry.cpp.i:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermometry.cpp.i
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermometry.cpp.i
-.PHONY : Src/thermometry.cpp.i
-
-Src/thermometry.s: Src/thermometry.cpp.s
-
-.PHONY : Src/thermometry.s
-
-# target to generate assembly for a file
-Src/thermometry.cpp.s:
-	$(MAKE) -f CMakeFiles/test_runner.dir/build.make CMakeFiles/test_runner.dir/Src/thermometry.cpp.s
-	$(MAKE) -f CMakeFiles/template.dir/build.make CMakeFiles/template.dir/Src/thermometry.cpp.s
-.PHONY : Src/thermometry.cpp.s
-
 Src/utilities.o: Src/utilities.cpp.o
 
 .PHONY : Src/utilities.o
@@ -723,30 +483,6 @@ help:
 	@echo "... Src/main.o"
 	@echo "... Src/main.i"
 	@echo "... Src/main.s"
-	@echo "... Src/rect_thermal_spot.o"
-	@echo "... Src/rect_thermal_spot.i"
-	@echo "... Src/rect_thermal_spot.s"
-	@echo "... Src/sample1.o"
-	@echo "... Src/sample1.i"
-	@echo "... Src/sample1.s"
-	@echo "... Src/sample2.o"
-	@echo "... Src/sample2.i"
-	@echo "... Src/sample2.s"
-	@echo "... Src/space_transformer.o"
-	@echo "... Src/space_transformer.i"
-	@echo "... Src/space_transformer.s"
-	@echo "... Src/temperature_range.o"
-	@echo "... Src/temperature_range.i"
-	@echo "... Src/temperature_range.s"
-	@echo "... Src/thermo_pixel.o"
-	@echo "... Src/thermo_pixel.i"
-	@echo "... Src/thermo_pixel.s"
-	@echo "... Src/thermo_pixel_vector.o"
-	@echo "... Src/thermo_pixel_vector.i"
-	@echo "... Src/thermo_pixel_vector.s"
-	@echo "... Src/thermometry.o"
-	@echo "... Src/thermometry.i"
-	@echo "... Src/thermometry.s"
 	@echo "... Src/utilities.o"
 	@echo "... Src/utilities.i"
 	@echo "... Src/utilities.s"

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build.rule"
 		},
 		{
-			"file" : "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
+			"file" : "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test.rule"
 		}
 	],
 	"target" : 

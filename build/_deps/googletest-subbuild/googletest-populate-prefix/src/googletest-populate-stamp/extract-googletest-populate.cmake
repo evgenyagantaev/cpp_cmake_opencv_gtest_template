@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
-get_filename_component(directory "/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-subbuild/googletest-populate-prefix/src/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip" ABSOLUTE)
+get_filename_component(directory "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/_deps/googletest-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -fPIC -fopenmp  -DBOOST_LOG_DYN_LINK -g   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/build -I/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template -I/home/oem/workspace/cpp/cpp_cmake_opencv_gtest_template/Inc -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build -I/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template -I/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/Inc -isystem /usr/include/opencv4 
 
