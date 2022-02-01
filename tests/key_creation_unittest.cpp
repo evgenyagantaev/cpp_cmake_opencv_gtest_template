@@ -4,6 +4,7 @@
 #include "main.hpp"
 #include "key.hpp"
 #include "key_factory.hpp"
+#include "Keyboard.hpp"
 
 namespace key_tst
 {

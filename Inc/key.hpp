@@ -4,7 +4,7 @@
     interface I_Key
     {
         +get_state()
-        +set_state(bool state)
+        +check_state()
         +get_count()
         +increment_count()
         +reset_count()
@@ -25,6 +25,8 @@
 
     I_Key <|-up- Key : implements
  @enduml
+
+
 */
 
 #pragma once
@@ -35,9 +37,6 @@
 /// @brief integer class identificator for object production factory class
 const int KEY_CLASS_ID = 1;
 
-/*!
- @brief 
-*/
 
 /*!
  @brief Public interface of one device key 
@@ -47,7 +46,7 @@ class I_Key
     public:
 
     virtual bool get_state() const = 0;
-    virtual void set_state(bool state) = 0;
+    virtual std::size_t check_state() = 0;
     virtual std::size_t get_count() const = 0;
     virtual std::size_t increment_count() = 0;
     virtual std::size_t reset_count() = 0;
@@ -59,15 +58,58 @@ class I_Key
 /*!
  @brief Class that represents one key of device keyboard
  @details 
-    
+    States of one key:
+    1. inactive
+    2. Pressed X miliseconds
+    3. Released after short press
+    4. released after long press
 
+
+ @startuml
+
+    start
+
+    : KEY_POLLING_PERIOD = 10 miliseconds;
+    :read current system tick counter;
+
+    if (button pressed) then (yes pressed)
+        : state = PRESSED;
+        : count += current system tick counter - ticks;
+        
+    else (not pressed)
+        if (state == PRESSED) then (yes)
+        : state = RELEASED;
+        else
+            if (state == RELEASED) then (yes)
+            : state = INACTIVE;
+            : count = 0;
+            endif
+        endif
+    endif
+
+    : ticks = current system tick counter;
+
+    stop
+
+ @enduml
 
 */
 class Key: public I_Key
 {
+    public:
+
+    typedef enum 
+    {
+        INACTIVE,
+        PRESSED,
+        RELEASED
+    }
+    key_state_t;
+
     private:
 
-    bool pressed = false;
+    size_t ticks = 0;
+    key_state_t key_state = INACTIVE;
     size_t count_ms = 0;
 
     gpio_num_t key_pin;
@@ -84,10 +126,7 @@ class Key: public I_Key
         return pressed;
     };
 
-    virtual void set_state(bool state)
-    {
-        pressed = state;
-    };
+    virtual std::size_t check_state();
 
     virtual std::size_t get_count() const
     {
