@@ -1,5 +1,0 @@
-if(EXISTS "/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/test_runner[1]_tests.cmake")
-  include("/home/eugeny/workspace/cpp/cpp_cmake_opencv_gtest_template/build/test_runner[1]_tests.cmake")
-else()
-  add_test(test_runner_NOT_BUILT test_runner_NOT_BUILT)
-endif()
