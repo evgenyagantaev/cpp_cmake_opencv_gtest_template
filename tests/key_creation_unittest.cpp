@@ -33,6 +33,13 @@ namespace key_tst
 
     }
 
+    TEST(keyboard_class, key_polling)
+    {
+        Keyboard &keyboard = Keyboard::get_instance();
+
+        keyboard.
+    }
+
 
 
 

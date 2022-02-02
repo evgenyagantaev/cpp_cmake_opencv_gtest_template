@@ -24,3 +24,8 @@ size_t Keyboard::populate_with_keys()
 
     return counter;
 }
+
+size_t Keyboard::poll_keys()
+{
+    
+}

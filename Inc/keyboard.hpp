@@ -60,6 +60,8 @@ class I_Keyboard
 {
     public:
 
+    virtual size_t poll_keys() = 0;
+
 };
 
 
@@ -116,6 +118,8 @@ class Keyboard: public I_Keyboard
 
     public:
 
+    static const size_t KEY_POLLING_PERIOD = 10; // milliseconds
+
     static Keyboard& get_instance()
     {
         static Keyboard obj;
@@ -123,6 +127,7 @@ class Keyboard: public I_Keyboard
     }
     //****************
 
+    virtual size_t poll_keys();
 
 };
 
