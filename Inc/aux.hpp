@@ -1,5 +1,8 @@
 #pragma once
 
+#include "main.hpp"
+#include <cstddef>
+
 typedef enum {
     GPIO_NUM_NC = -1,    /*!< Use to signal not connected to S/W */
     GPIO_NUM_0 = 0,     /*!< GPIO0, input and output */
@@ -62,3 +65,7 @@ typedef enum {
 } gpio_mode_t;
 
 void gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+
+size_t xTaskGetTickCount();
+
+size_t gpio_get_level(gpio_num_t pin);

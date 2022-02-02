@@ -1,3 +1,5 @@
+#pragma once
+
 /*!
  @file
  @startuml
@@ -19,23 +21,64 @@
         -key_pin
     }
 
+    class Key_gpio_pins
+    {
+        +a_button_pin {static}
+        +b_button_pin {static}
+        +c_button_pin {static}
+        +d_button_pin {static}
+    }
+
     class Key_factory
+    class Keyboard
 
     Key_factory -> Key : creates
 
     I_Key <|-up- Key : implements
+
+    Keyboard --> Key_factory : order
+    Keyboard --> Key : bind
+    Key --> Key_gpio_pins : bind
  @enduml
 
 
 */
 
-#pragma once
+
+/// @brief integer class identificator for object production factory class
+const int KEY_CLASS_ID = 1;
+
+/*!
+ @startuml
+ 
+    
+
+ @enduml
+*/
+
 
 #include "main.hpp"
 #include <cstring>
 
-/// @brief integer class identificator for object production factory class
-const int KEY_CLASS_ID = 1;
+
+class Key_gpio_pins
+{
+    public:
+
+    static const gpio_num_t A_BUTTON_PIN = GPIO_NUM_34;
+    static const gpio_num_t B_BUTTON_PIN = GPIO_NUM_35;
+    static const gpio_num_t C_BUTTON_PIN = GPIO_NUM_36;
+    static const gpio_num_t D_BUTTON_PIN = GPIO_NUM_39;
+};
+
+typedef enum 
+{
+    INACTIVE,
+    PRESSED,
+    RELEASED
+}
+key_state_t;
+
 
 
 /*!
@@ -45,7 +88,9 @@ class I_Key
 {
     public:
 
-    virtual bool get_state() const = 0;
+    
+
+    virtual key_state_t get_state() const = 0;
     virtual std::size_t check_state() = 0;
     virtual std::size_t get_count() const = 0;
     virtual std::size_t increment_count() = 0;
@@ -100,14 +145,7 @@ class Key: public I_Key
 {
     public:
 
-    typedef enum 
-    {
-        INACTIVE,
-        PRESSED,
-        RELEASED
-    }
-    key_state_t;
-
+    
     private:
 
     size_t ticks = 0;
@@ -123,9 +161,9 @@ class Key: public I_Key
     @{ 
     */
 
-    virtual bool get_state() const
+    virtual key_state_t get_state() const
     {
-        return pressed;
+        return key_state;
     };
 
     virtual std::size_t check_state();

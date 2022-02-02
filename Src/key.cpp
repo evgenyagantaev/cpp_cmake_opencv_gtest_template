@@ -1,6 +1,7 @@
 #include "key.hpp"
 #include "key_factory.hpp"
 #include <cassert>
+#include "aux.hpp"
 
 
 
@@ -21,16 +22,20 @@ namespace
 
 } // namespace
 
+/// @brief Binds button to gpio pin
+/// @param pin - the pin to bind the button to
 bool Key::bind_pin(gpio_num_t pin)
 {
     key_pin = pin;
     gpio_set_direction(key_pin, GPIO_MODE_INPUT);
+
+    return true;
 }
 
 
 /// @brief renewes the current state of the key
 /// @returns current system tick counter value
-virtual size_t Key::check_state()
+size_t Key::check_state()
 {
     size_t current_system_tick = xTaskGetTickCount();
     assert(current_system_tick > 0);

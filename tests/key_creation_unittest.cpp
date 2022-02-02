@@ -4,7 +4,7 @@
 #include "main.hpp"
 #include "key.hpp"
 #include "key_factory.hpp"
-#include "Keyboard.hpp"
+#include "keyboard.hpp"
 
 namespace key_tst
 {
@@ -19,8 +19,6 @@ namespace key_tst
         Key &tst_key = (*key_pntr);
 
         EXPECT_FALSE(tst_key.get_state());
-        tst_key.set_state(true);
-        EXPECT_TRUE(tst_key.get_state());
         EXPECT_EQ(tst_key.get_count(), 0);
         tst_key.increment_count();
         EXPECT_EQ(tst_key.get_count(), 1);

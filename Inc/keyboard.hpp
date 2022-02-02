@@ -1,3 +1,5 @@
+#pragma once
+
 /*!
  @file
  @startuml
@@ -41,15 +43,15 @@
  @enduml
 */
 
-#pragma once
+
 
 #include "main.hpp"
 #include "key.hpp"
+#include "key_factory.hpp"
 
 #include <sstream>
 #include <iostream>
 #include <string>
-#include "cpp_pthread_lib.hpp"
 
 #include <vector>
 
@@ -76,6 +78,12 @@ class I_Keyboard
     object AaA {
         double click
     }
+    object ar { 
+        released after short
+    }
+     object aar { 
+        released after long
+    }
 
     object keys {
         abcd
@@ -91,27 +99,30 @@ class Keyboard: public I_Keyboard
 {
     private:
 
-    std::vector<Key> keys;
+    Key &a_button = *(Key_factory::get_instance().create(KEY_CLASS_ID));
+    Key &b_button = *(Key_factory::get_instance().create(KEY_CLASS_ID));
+    Key &c_button = *(Key_factory::get_instance().create(KEY_CLASS_ID));
+    Key &d_button = *(Key_factory::get_instance().create(KEY_CLASS_ID));
+
+    Keyboard()
+    {
+        populate_with_keys();
+    };
+    Keyboard(const Keyboard&);
+    Keyboard& operator=(const Keyboard&);
+    ~Keyboard(){};
+
+    size_t populate_with_keys();
 
     public:
 
-    Keyboard(gpio_num_t pin1, gpio_num_t pin2, gpio_num_t pin3, gpio_num_t pin4)
+    static Keyboard& get_instance()
     {
-        keys.push_back(Key(pin1));
-        keys.push_back(Key(pin2));
-        keys.push_back(Key(pin3));
-        keys.push_back(Key(pin4));
-        pin_setup();
+        static Keyboard obj;
+        return obj;
     }
+    //****************
 
-    virtual std::vector<Key> get_keys()
-    {
-        return keys;
-    }
-
-    void pin_setup();
-
-    void keyboard_action();
 
 };
 
